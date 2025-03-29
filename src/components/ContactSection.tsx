@@ -127,7 +127,7 @@ export default function ContactSection() {
           </div>
           
           <div className="lg:col-span-2 reveal animate-delay-200">
-            <div className="bg-secondary/50 rounded-xl p-8 h-full">
+            <div className="bg-secondary/50 rounded-xl p-6 md:p-8 h-full">
               <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
               
               <div className="space-y-6">
@@ -137,7 +137,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <h4 className="font-medium mb-1">Email Us</h4>
-                    <a href="mailto:contact@carevolution.com" className="text-foreground/70 hover:text-primary transition-colors">
+                    <a href="mailto:contact@carevolution.com" className="text-foreground/70 hover:text-primary transition-colors break-all">
                       contact@carevolution.com
                     </a>
                   </div>
@@ -170,18 +170,18 @@ export default function ContactSection() {
                 </div>
               </div>
               
-              <div className="mt-10">
+              <div className="mt-8">
                 <h4 className="font-medium mb-3">Business Hours</h4>
                 <ul className="space-y-2 text-foreground/70">
-                  <li className="flex justify-between">
+                  <li className="flex flex-col md:flex-row md:justify-between">
                     <span>Monday - Friday:</span>
                     <span>9:00 AM - 6:00 PM</span>
                   </li>
-                  <li className="flex justify-between">
+                  <li className="flex flex-col md:flex-row md:justify-between">
                     <span>Saturday:</span>
                     <span>10:00 AM - 3:00 PM</span>
                   </li>
-                  <li className="flex justify-between">
+                  <li className="flex flex-col md:flex-row md:justify-between">
                     <span>Sunday:</span>
                     <span>Closed</span>
                   </li>

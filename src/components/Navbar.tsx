@@ -3,12 +3,15 @@ import { useState, useEffect } from "react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import Logo from "@/components/Logo";
 
 const navItems = [
   { label: "Home", href: "#home" },
   { label: "Services", href: "#services" },
   { label: "Why Us", href: "#why-us" },
   { label: "CRM", href: "#crm" },
+  { label: "Testimonials", href: "#testimonials" },
+  { label: "FAQ", href: "#faq" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -35,9 +38,7 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 flex items-center justify-between">
         <a href="#home" className="flex items-center">
-          <h1 className="text-xl md:text-2xl font-bold text-primary">
-            Care<span className="text-foreground">volution</span>
-          </h1>
+          <Logo />
         </a>
 
         {/* Desktop Navigation */}

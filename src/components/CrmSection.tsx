@@ -30,7 +30,14 @@ export default function CrmSection() {
   return (
     <section id="crm" className="section-padding bg-gradient-to-b from-background to-secondary/30" ref={ref}>
       <div className="container mx-auto">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
+          <div className="flex justify-center mb-6 reveal">
+            <img 
+              src="/lovable-uploads/45757040-0b7c-4213-bfb6-76bf99df3bdc.png" 
+              alt="Carecierge Logo" 
+              className="h-16 md:h-20" 
+            />
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 reveal">CRM Integration</h2>
           <p className="text-foreground/70 reveal animate-delay-100">
             Streamline your practice operations with our powerful CRM solutions
@@ -49,10 +56,12 @@ export default function CrmSection() {
                   "Secure storage of patient information",
                   "Seamless integration with existing practice software"
                 ].map((benefit, index) => (
-                  <li key={index} className="flex items-center gap-3">
-                    <span className="h-6 w-6 rounded-full bg-primary flex items-center justify-center text-white text-sm">
-                      {index + 1}
-                    </span>
+                  <li key={index} className="flex items-start gap-3">
+                    <div className="flex-shrink-0 mt-0.5">
+                      <span className="flex items-center justify-center h-6 w-6 rounded-full bg-primary text-white text-sm">
+                        {index + 1}
+                      </span>
+                    </div>
                     <span>{benefit}</span>
                   </li>
                 ))}

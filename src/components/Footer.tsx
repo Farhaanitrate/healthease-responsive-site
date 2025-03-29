@@ -1,5 +1,6 @@
 
 import { ThemeToggle } from "@/components/ThemeToggle";
+import Logo from "@/components/Logo";
 
 export default function Footer() {
   return (
@@ -7,9 +8,9 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
-            <h2 className="text-xl font-bold text-primary mb-4">
-              Care<span className="text-foreground">volution</span>
-            </h2>
+            <div className="mb-4">
+              <Logo />
+            </div>
             <p className="text-foreground/70 mb-4">
               Transforming healthcare practices with innovative digital solutions.
             </p>
@@ -22,7 +23,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              {["Home", "Services", "Why Us", "CRM", "Contact"].map((item) => (
+              {["Home", "Services", "Why Us", "CRM", "Testimonials", "FAQ", "Contact"].map((item) => (
                 <li key={item}>
                   <a
                     href={`#${item.toLowerCase().replace(" ", "-")}`}
